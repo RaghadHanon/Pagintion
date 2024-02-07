@@ -10,7 +10,8 @@ async function displayData(page){
   const products = data.products;
   const setOfProducts = products.map( (e) =>{
     return `
-    <div class="card col-lg-4 col-md-6 col-xs-1 p-3" >
+    <div class="col-lg-4 col-md-6 col-xs-1 ">
+    <div class="card" >
     <img src="${e.thumbnail}" class="card-img-top"  >
     <div class="card-body d-flex flex-column">
       <h5 class="card-title">${e.title}</h5>
@@ -18,6 +19,8 @@ async function displayData(page){
       <a href="#" class="btn btn-primary">View more</a>
     </div>
     </div>
+    </div>
+    
     `;
   }).join('');
   console.log(setOfProducts);

@@ -1,0 +1,6 @@
+.container{
+  width: 80%;
+}
+.card img{
+  aspect-ratio: calc(4/3);
+}
